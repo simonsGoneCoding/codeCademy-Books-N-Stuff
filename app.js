@@ -61,3 +61,16 @@ class Movie extends Media {
     this._runTime = runTime;
   }
 }
+
+const historyOfEverything = new Book(
+  "A Short History of Nearly Everything",
+  "Bill Boryson",
+  544
+);
+
+historyOfEverything.toggleCheckOutStatus();
+console.log(historyOfEverything.isCheckedOut);
+
+historyOfEverything.addRating(4);
+historyOfEverything.addRating(5);
+historyOfEverything.addRating(5);
